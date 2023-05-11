@@ -1,4 +1,11 @@
-p {
-    color:green;
-    
+.weather {
+    color:blue;
+    text-align: center;
+    font-size: 200%;
+    font-family: cursive;
+}
+div#NaS {
+    text-align: center;
+    background-color: aqua;
+    display:table-footer-group;
 }
