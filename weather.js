@@ -51,3 +51,5 @@ console.log(data.name);
 console.log(data.sys.country);
 console.log(data.main.temp_min);
 console.log(data.main.temp_max);
+let p1 = document.querySelector('div#NaS');
+p1.textContent ='最高気温';
