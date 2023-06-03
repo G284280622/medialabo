@@ -4,13 +4,59 @@
         <meta charset="utf-8">
         <title>project</title>
         <link rel="stylesheet" href="prject.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
         <script src="weather.js" defer></script>
     </head>
     <body>
-        <h1><p class="weather">世界の天気</p></h1>
-        <div id="NaS">
-            <div><p>北半球</p></div>
-            <div><p>南半球</p></div>
-        </div>
+        <h1><p class="wold">Weather of the Wold</p></h1>
+        <h2>世界の気候を表示します</h2>
+        <img class="sign" src="sum.jpeg">
+        <div><img class="pic" src=""></div> 
+    </h1>
+    <label for="tennki">プルダウンメニュー</label>
+    <select name="ten" id="ten">
+        <option value="">国を選べ！</option>
+        <option value="360630">カイロ(エジプト)</option>
+        <option value="524901">モスクワ （ロシア）</option>
+        <option value="993800">ヨハネスブルク （南アフリカ）</option>
+        <option value="1816670">北京 （中華人民共和国）</option>
+        <option value="1850147">東京 （日本）</option>
+        <option value="1880252">シンガポール</option>
+        <option value="2147714">シドニー （オーストラリア）</option>
+        <option value="2643743">ロンドン （イギリス）</option>
+        <option value="2968815">パリ （フランス）</option>
+        <option value="3451189">リオデジャネイロ （ブラジル）</option>
+        <option value="5128581">ニューヨーク （アメリカ合衆国）</option>
+        <option value="5368361">ロサンゼルス （アメリカ合衆国）</option>
 
+    </select>
+    <button id="btn">結果表示</button>
+
+        <!-- <div id="list" >
+                <div id="countory01">カイロ(エジプト)</p></div>
+                <div id="countory02">カイロ(エジプト)</p></div>
+                <div id="countory03">ヨハネスブルク （南アフリカ）</p></div>
+                <div id="countory04">北京 （中華人民共和国）</p></div>
+                <div id="countory05">東京 （日本）</p></div>
+                <div id="countory06">シンガポール</p></div>
+                <div id="countory07">シドニー （オーストラリア）</p></div>
+                <div id="countory08">ロンドン （イギリス）</p></div>
+                <div id="countory09">パリ （フランス）</p></div>
+                <div id="countory10">リオデジャネイロ （ブラジル）</p></div>
+                <div id="countory11">ニューヨーク （アメリカ合衆国）</p></div>
+                <div id="countory12">ロサンゼルス （アメリカ合衆国）</p></div>
+        </div> -->
+
+    <h3><strong>ここに答えが出る！</strong></h3>
+    <div id="kotae">
+        <span id="coordlon"></span></p>
+        <span id="coordlat"></span></p>
+        <span id="weather"></span></p>
+        <span id="min"></span></p>
+        <span id="max"></span></p>
+        <span id="humidity"></span></p>
+        <span id="windsp"></span></p>
+        <span id="winddeg"></span></p>
+        <span id="name"></span></p>
+    </div>
     </body>
