@@ -32,9 +32,7 @@ function hantei() {
   console.log(kaisu+"回目の予想 : "+yoso);
   // 課題3-1: 正解判定する
   
-  if (atari==1) {
-    e3.textContent = '答えは '+kotae+' でした。ゲームはすでに終わっています。';
-  }
+  
   if (kaisu<3) {
     if (yoso == kotae) {
       atari = atari+1;
