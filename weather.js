@@ -47,54 +47,6 @@
 
 ////////// 課題3-2 ここからプログラムを書こう
 
-// let c1 = document.querySelector('#countory01');
-// c1.addEventListener('click', changeColor);
-
-// let c2 = document.querySelector('#countory02');
-// c2.addEventListener('click', changeColor);
-
-// let c3 = document.querySelector('#countory03');
-// c3.addEventListener('click', changeColor);
-
-// let c4 = document.querySelector('#countory04');
-// c4.addEventListener('click', changeColor);
-
-// let c5 = document.querySelector('#countory05');
-// c5.addEventListener('click', changeColor);
-
-// let c6 = document.querySelector('#countory06');
-// c6.addEventListener('click', changeColor);
-
-// let c7 = document.querySelector('#countory07');
-// c7.addEventListener('click', changeColor);
-
-// let c8 = document.querySelector('#countory08');
-// c8.addEventListener('click', changeColor);
-
-// let c9 = document.querySelector('#countory09');
-// c9.addEventListener('click', changeColor);
-
-// let c10 = document.querySelector('#countory10');
-// c10.addEventListener('click', changeColor);
-
-// let c11 = document.querySelector('#countory11');
-// c11.addEventListener('click', changeColor);
-
-// let c12 = document.querySelector('#countory12');
-// c12.addEventListener('click', changeColor);
-
-
-// function changeColor(event) {
-// 	// ランダムな RGB の色
-// 	let r = Math.floor(Math.random() * 256);
-// 	let g = Math.floor(Math.random() * 256);
-// 	let b = Math.floor(Math.random() * 256);
-// 	// 色のプロパティ値を作る
-// 	let color = 'rgb(' + r + ',' + g + ',' + b + ')';
-
-// 	let div = event.target;
-// 	div.style.backgroundColor = color;
-// }
 
 let a = document.querySelector('button#btn');
 a.addEventListener('click',ShowWeather);
@@ -112,6 +64,12 @@ axios.get(url)
   .then(ShowResult)
   .catch(showError)
   .then(finish);
+
+  //画像・・
+  if (cood > 0) {
+  let gazoo = document.querySelector('img#kuni');
+  gazoo.src = "kuni"+cood+"kuni.png";
+  }
 }
 
 function ShowResult(resp) {
@@ -139,19 +97,15 @@ let e7 = document.querySelector('span#windsp');
 let e8 = document.querySelector('span#winddeg');
 let e9 = document.querySelector('span#name');
 
-e1.textContent = '緯度は'+coorda+'です。';
-e2.textContent = '経度は'+coordb+'です。';
-e3.textContent = '天候は'+tennki+'です。';
-e4.textContent = '最高気温は'+max+'です。';
-e5.textContent = '最低気温は'+min+'です。';
-e6.textContent = '湿度は'+humidity+'です。';
-e7.textContent = '風速は'+speed+'です。';
-e8.textContent = '風向は'+deg+'です。';
-e9.textContent = '都市名は'+kuni+'です。';
-
-
-
-
+e1.textContent = '緯度は  '+coorda+'  です。';
+e2.textContent = '経度は  '+coordb+'  です。';
+e3.textContent = '天候は  '+tennki+'  です。';
+e4.textContent = '最高気温は '+max+'℃ です。';
+e5.textContent = '最低気温は '+min+'℃ です。';
+e6.textContent = '湿度は '+humidity+'% です。';
+e7.textContent = '風速は '+speed+'m/s です。';
+e8.textContent = '風向は '+deg+'ノット です。';
+e9.textContent = '都市名は '+kuni+' です。';
 }
 function showError(err) {
   console.log(err);
@@ -159,6 +113,8 @@ function showError(err) {
 function finish() {
   console.log('Ajax 通信が終わりました');
 }
+
+
 
 
 

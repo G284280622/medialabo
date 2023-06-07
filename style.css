@@ -1,13 +1,13 @@
 p {
-    color :rgb(162, 195, 114);
+    color :rgb(255, 255, 255);
 }
 h1{
-    color: rgb(91, 217, 217);    
+    color: rgb(201, 230, 15);    
     font-weight: bold;
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 h2 {
-    color: rgb(65, 65, 232);
+    color: rgb(218, 16, 218);
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 h3, h4, h5 {
@@ -15,5 +15,5 @@ h3, h4, h5 {
     font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
 }
 body{
-    background-color: gray;
+    background-color: rgb(8, 99, 23);
 }
