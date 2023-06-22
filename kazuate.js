@@ -36,22 +36,22 @@ function hantei() {
   if (kaisu<3) {
     if (yoso == kotae) {
       atari = atari+1;
-      e3.textContent = '正解です。おめでとう！';
+      e3.textContent = '正解です.おめでとう！';
     }if (yoso<kotae) {
-      e3.textContent = 'まちがい、答えはもっと大きいですよ';
+      e3.textContent = 'まちがい.答えはもっと大きいですよ';
     }if (yoso>kotae) {
-      e3.textContent = 'まちがい、答えはもっと小さいですよ';
+      e3.textContent = 'まちがい.答えはもっと小さいですよ';
     }
   }
    if (kaisu === 3) { 
     if (yoso === kotae) {
-      e3.textContent = '正解です。おめでとう！';
+      e3.textContent = '正解です.おめでとう！';
     }if (yoso!=kotae) {
-      e3.textContent = 'まちがい、残念でした答えは '+kotae+' です。';
+      e3.textContent = 'まちがい.残念でした答えは '+kotae+' です.';
     }
   }
   if (kaisu>=4) {
-    e3.textContent = '答えは '+kotae+' でした。ゲームはすでに終わっています。';
+    e3.textContent = '答えは '+kotae+' でした.ゲームはすでに終わっています';
   }
   console.log(atari);
 }
