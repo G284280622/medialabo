@@ -43,8 +43,8 @@ function hantei() {
       e3.textContent = 'まちがい.答えはもっと小さいですよ';
     }
   }
-   if (kaisu === 3) { 
-    if (yoso === kotae) {
+   if (kaisu == 3) { 
+    if (yoso == kotae) {
       e3.textContent = '正解です.おめでとう！';
     }if (yoso!=kotae) {
       e3.textContent = 'まちがい.残念でした答えは '+kotae+' です.';
